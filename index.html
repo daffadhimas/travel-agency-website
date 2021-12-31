@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- My Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- My Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Dravel - Travel effortless and memorable</title>
+
+</head>
+
+<body>
+  <!------------------------------------------- Navbar ------------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span>D</span>ravel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Book</a>
+          <a class="nav-link" href="#">Packages</a>
+          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="#">Contact</a>
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-outline-warning rounded-pill" type="button">Log in</button>
+            <button class="btn btn-warning rounded-pill" type="button">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!------------------------------------------- Akhir navbar ------------------------------------------->
+
+
+  <!------------------------------------------- Jumbotron ------------------------------------------->
+  <div class="jumbotron" id="jumbotron">
+    <div class="container">
+      <h1 class="display-4">A <span>journey</span> begins!</h1>
+      <p class="lead">Your <span>adventure</span>, Our <span>expertise</span></p>
+      <a href="#" class="btn btn-warning rounded-pill">BOOK NOW</a>
+    </div>
+  </div>
+  <!------------------------------------------- Akhir jumbotron ------------------------------------------->
+
+
+  <!------------------------------------------- About ------------------------------------------->
+  <section class="about" id="about">
+    <div class="container">
+      <h1 class="text-center">About Us</h1>
+      <div class="kotak mx-auto rounded-pill mb-5"></div>
+      <div class="row text-center paragraf">
+        <div class="col">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit veniam tempora ducimus animi
+            ipsum minus neque dolorem consectetur accusantium, est repellat architecto sint dignissimos
+            rerum doloremque explicabo esse dolorum fugit sapiente ex harum. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Impedit veniam tempora ducimus animi
+            ipsum minus neque dolorem consectetur accusantium, est repellat architecto sint dignissimos
+            rerum doloremque explicabo esse dolorum fugit sapiente ex harum.</p>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center mt-4">
+        <duv class="col-sm-2">
+          <h4>8+</h4>
+          <p class="awards lead mb-3">Work <br> Partners</p>
+        </duv>
+        <div class="col-sm-2">
+          <h4>15+</h4>
+          <p class="awards lead mb-3">Years of <br> Experience</p>
+        </div>
+        <div class="col-sm-2">
+          <h4>25+</h4>
+          <p class="awards lead mb-3">Winning <br> Awards</p>
+        </div>
+        <div class="col-sm-2">
+          <h4>900+</h4>
+          <p class="awards lead mb-3">Tourist <br> Destinations</p>
+        </div>
+        <div class="col-sm-2">
+          <h4>5000+</h4>
+          <p class="awards lead">Happy <br> Families</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------------- Akhir About ------------------------------------------->
+
+
+  <!------------------------------------------- Book ------------------------------------------->
+  <section class="book" id="book">
+    <div class="container">
+      <h1 class="text-center">Let us take you places</h1>
+      <div class="kotak mx-auto rounded-pill mb-5"></div>
+      <div class="book-now">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-fluid" src="img/travelling.svg" alt="Travelling">
+          </div>
+          <div class="col-sm-6">
+            <form>
+              <label for="destination" class="destination form-label">Destination</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="destination" placeholder="search places"
+                  aria-label="search places">
+                <button class="btn btn-warning btn-destination" type="button"><i class="bi bi-search"></i></button>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label guest">Guest</label>
+                <input class="form-control rounded-pill" type="text" placeholder="number of guests">
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label class="mb-2" for="from">From</label>
+                  <input type="text" class="form-control rounded-pill" id="from" placeholder="dd/mm/yy"
+                    aria-label="dd/mm/yy">
+                </div>
+                <div class="col">
+                  <label class="mb-2" for="to">To</label>
+                  <input type="text" class="form-control rounded-pill" id="to" placeholder="dd/mm/yy"
+                    aria-label="dd/mm/yy">
+                </div>
+              </div>
+              <button type="button" class="book-now btn-lg btn btn-warning mt-4 rounded-pill">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------------- Akhir book ------------------------------------------->
+
+
+  <!------------------------------------------- Packages ------------------------------------------->
+  <section class="packages" id="packages">
+    <div class="container">
+      <h1 class="text-center">Packages</h1>
+      <div class="kotak mx-auto rounded-pill mb-5"></div>
+      <div class="row">
+        <div class="col-sm-4 pt-4">
+          <div class="card rounded">
+            <img src="img/packages/labuan-bajo.jpg" class="card-img-top rounded-top" alt="Labuan Bajo">
+            <div class="card-body">
+              <h4 class="card-title"><i class="bi bi-geo-alt-fill pe-1"></i>Labuan Bajo</h4>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+                <br>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <br>
+                <span class="fs-5">IDR 2.499.000 <small class="text-muted text-decoration-line-through ps-1">IDR
+                    2.999.000</small></span>
+              </p>
+              <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pt-4">
+          <div class="card rounded">
+            <img src="img/packages/kelingking-beach.jpg" class="card-img-top rounded-top" alt="Kelingking Beach">
+            <div class="card-body">
+              <h4 class="card-title"><i class="bi bi-geo-alt-fill pe-1"></i>Kelingking Beach</h4>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+                <br>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-half star"></i>
+                <br>
+                <span class="fs-5">IDR 1.999.000 <small class="text-muted text-decoration-line-through ps-1">IDR
+                    2.499.000</small></span>
+              </p>
+              <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pt-4">
+          <div class="card rounded">
+            <img src="img/packages/bromo.jpg" class="card-img-top rounded-top" alt="Bromo Tengger Semeru">
+            <div class="card-body">
+              <h4 class="card-title"><i class="bi bi-geo-alt-fill pe-1"></i>Bromo Tengger Semeru</h4>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+                <br>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star star"></i>
+                <br>
+                <span class="fs-5">IDR 1.499.000 <small class="text-muted text-decoration-line-through ps-1">IDR
+                    1.999.000</small></span>
+              </p>
+              <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pt-4">
+          <div class="card rounded">
+            <img src="img/packages/toba-lake.jpg" class="card-img-top rounded-top" alt="Toba Lake">
+            <div class="card-body">
+              <h4 class="card-title"><i class="bi bi-geo-alt-fill pe-1"></i>Toba Lake</h4>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+                <br>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-half star"></i>
+                <br>
+                <span class="fs-5">IDR 1.999.000 <small class="text-muted text-decoration-line-through ps-1">IDR
+                  2.499.000</small></span>
+                </p>
+                <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 pt-4">
+            <div class="card rounded">
+              <img src="img/packages/borobudur-temple.jpg" class="card-img-top rounded-top" alt="Borobudur Temple">
+              <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-geo-alt-fill pe-1"></i>Borobudur Temple</h4>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                  sit amet consectetur adipisicing elit.
+                  <br>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star-fill star"></i>
+                  <i class="bi bi-star star"></i>
+                  <br>
+                  <span class="fs-5">IDR 999.000 <small class="text-muted text-decoration-line-through ps-1">IDR
+                      1.499.000</small></span>
+                </p>
+                <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 pt-4">
+          <div class="card rounded">
+            <img src="img/packages/raja-ampat.jpg" class="card-img-top rounded-top" alt="Raja Ampat">
+            <div class="card-body">
+              <h4 class="card-title"><i class="bi bi-geo-alt-fill pe-1"></i>Raja Ampat</h4>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+                <br>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <i class="bi bi-star-fill star"></i>
+                <br>
+                <span class="fs-5">IDR 2.999.000 <small class="text-muted text-decoration-line-through ps-1">IDR
+                    3.499.000</small></span>
+              </p>
+              <a href="#" class="btn btn-warning rounded-pill">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------------- Akhir packages ------------------------------------------->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
