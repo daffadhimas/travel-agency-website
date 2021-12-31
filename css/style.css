@@ -26,10 +26,10 @@ section {
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
     position: relative;
     z-index: 999;
-}
+} */
 
 .navbar-brand {
     font-family: 'Viga', sans-serif;
@@ -38,6 +38,7 @@ section {
 
 nav {
     font-family: 'Poppins', sans-serif;
+    background-color: white !important;
 }
 
 nav span {
@@ -63,9 +64,9 @@ nav span {
 
 .jumbotron .display-4 {
     color: white;
-    padding-top: 90px;
+    padding-top: 130px;
     margin-top: 150px;
-    font-weight: 100;
+    font-weight: 300;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     font-size: 60px;
     /* margin-bottom: 30px; */
@@ -186,10 +187,12 @@ section.book {
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
-
+    nav {
+        box-shadow: 0 1px 15px rgba(0,0,0,0.5);
+    }
     .navbar-brand,
     .nav-link {
-        color: white !important;
+        color: black !important;
     }
 
     .nav-link:hover::after {
@@ -203,7 +206,7 @@ section.book {
     }
 
     .jumbotron {
-        margin-top: -225px;
+        /* margin-top: -225px; */
         height: 640px;
     }
 
