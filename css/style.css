@@ -3,19 +3,21 @@ section {
     padding: 100px 0;
 }
 
-.about h1,
-.about h4,
-.book h1,
-.packages h1 {
+.about h4 {
     font-family: 'Viga', sans-serif;
 }
 
 .about h1,
 .book h1,
-.packages h1 {
+.packages h1,
+.services h1,
+.gallery h1,
+.reviews h1,
+.contact h1 {
     color: #333;
     font-size: 32px;
     margin-bottom: 0;
+    font-family: 'Viga', sans-serif;
 }
 
 .kotak {
@@ -37,8 +39,9 @@ section {
 }
 
 nav {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white !important;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav span {
@@ -64,13 +67,12 @@ nav span {
 
 .jumbotron .display-4 {
     color: white;
-    padding-top: 130px;
+    padding-top: 200px;
     margin-top: 150px;
-    font-weight: 300;
+    font-weight: 150;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    font-size: 60px;
+    font-size: 50px;
     /* margin-bottom: 30px; */
-
 }
 
 .jumbotron .display-4 span {
@@ -84,7 +86,8 @@ nav span {
 }
 
 .jumbotron a {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: .5rem;
 }
 
 .jumbotron::after {
@@ -99,6 +102,56 @@ nav span {
 
 /* Akhir jumbotron */
 
+/* Parallax */
+.parallax-1 {
+    background-image: url(../img/parallax/par1.jpg);
+}
+
+.parallax-2 {
+    background-image: url(../img/parallax/par2.jpg);
+}
+
+.parallax-3 {
+    background-image: url(../img/parallax/par3.jpg);
+}
+
+.parallax-1,
+.parallax-2,
+.parallax-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 300px;
+}
+
+.parallax-1 .display-4,
+.parallax-2 .display-4 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -25px;
+    letter-spacing: 5px;
+}
+
+.parallax-3 .display-4 {
+    margin-top: -70px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+}
+
+.parallax-1 .lead,
+.parallax-2 .lead,
+.parallax-3 .lead {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* Akhir parallax */
+
 /* About */
 .about h4 {
     color: #ffc107;
@@ -109,15 +162,16 @@ nav span {
 
 }
 
-.about p br {
-    display: none;
-}
-
 .about .paragraf p,
 .about .awards {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     color: #333;
+}
+
+.achievment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 
@@ -129,11 +183,11 @@ section.book {
 }
 
 .book input#destination {
-    border-radius: 90px 0 0 90px;
+    border-radius: .5rem 0 0 .5rem;
 }
 
 .book button.btn-destination {
-    border-radius: 0 90px 90px 0;
+    border-radius: 0 .5rem .5rem 0;
 }
 
 .book label.destination {
@@ -142,15 +196,16 @@ section.book {
 
 .book label,
 .book input {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     font-size: 18px;
 }
 
 .book button.book-now {
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
+    border-radius: .5rem;
 
 }
 
@@ -177,19 +232,113 @@ section.book {
 }
 
 .packages a {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 18px;
+    border-radius: .5rem;
 }
 
 /* Akhir packages */
 
+/* Services */
+section.services {
+    background-color: #e7eb90;
+}
+
+.services .icon {
+    font-size: 70px;
+    color: #ffc107;
+}
+
+.services h5,
+.services p {
+    color: #333;
+}
+
+.services p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Akhir services */
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Akhir gallery */
+
+/* Reviews */
+.reviews .card {
+    margin: 10px;
+    padding: .5rem;
+    background-color: #e7eb90;
+}
+
+.reviews p {
+    font-family: 'PT Sans', sans-serif;
+    color: #333;
+}
+
+.reviews .rating {
+    color: #ffc107;
+}
+
+/* Akhir reviews */
+
+/* Contact */
+.pic-contact {
+    background-image: url(../img/pic-contact.jpg);
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+section.contact {
+    border-radius: .5rem;
+    background-color: white;
+    position: relative;
+    top: -220px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.email-phone {
+    padding: .5rem 0;
+    background-color: #ffc107;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.contact p {
+    color: #333;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+form input.form-control,
+form select.form-select,
+form textarea.form-control {
+    border-radius: .5rem;
+    font-family: 'PT Sans', sans-serif;
+    border: 1px solid #ffc107
+}
+
+.alamat {
+    padding: 1rem 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+}
+
+.alamat p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Akhir contact */
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
-    nav {
-        box-shadow: 0 1px 15px rgba(0,0,0,0.5);
-    }
+
     .navbar-brand,
     .nav-link {
         color: black !important;
@@ -212,7 +361,7 @@ section.book {
 
     .jumbotron h1.display-4 {
         padding-top: 200px;
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .jumbotron p.lead {
@@ -223,9 +372,44 @@ section.book {
         font-size: 18px
     }
 
+    /* Parallax */
+    .parallax-1,
+    .parallax-2,
+    .parallax-3 {
+        min-height: 400px;
+    }
+
+    .parallax-1 .display-4,
+    .parallax-2 .display-4 {
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 50px;
+        letter-spacing: 10px;
+    }
+
+    .parallax-3 .display-4 {
+        margin-top: 20px;
+    }
+
+    .parallax-1 .lead,
+    .parallax-2 .lead,
+    .parallax-3 .lead {
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    /* Akhir parallax */
+
     .about h1,
     .book h1,
-    .packages h1 {
+    .packages h1,
+    .services h1,
+    .gallery h1,
+    .reviews h1,
+    .contact h1 {
         font-size: 40px;
     }
 
@@ -240,5 +424,15 @@ section.book {
 
     .book label.destination {
         margin-top: 0;
+    }
+    .form-send {
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .jumbotron h1.display-4 {
+        padding-top: 140px;
+        font-size: 50px;
     }
 }
