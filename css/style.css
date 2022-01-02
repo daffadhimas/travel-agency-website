@@ -300,14 +300,14 @@ section.contact {
     background-color: white;
     position: relative;
     top: -220px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 .email-phone {
     padding: .5rem 0;
     background-color: #ffc107;
     border-radius: .5rem;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 .contact p {
     color: #333;
@@ -320,12 +320,11 @@ form select.form-select,
 form textarea.form-control {
     border-radius: .5rem;
     font-family: 'PT Sans', sans-serif;
-    border: 1px solid #ffc107
 }
 
 .alamat {
     padding: 1rem 0;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     border-radius: .5rem;
 }
 
