@@ -36,12 +36,14 @@ section {
 .navbar-brand {
     font-family: 'Viga', sans-serif;
     font-size: 32px;
+    color: #333;
 }
 
 nav {
     font-family: 'Montserrat', sans-serif;
     background-color: white !important;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 nav span {
@@ -309,6 +311,7 @@ section.contact {
     border-radius: .5rem;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
+
 .contact p {
     color: #333;
     font-family: 'PT Sans', sans-serif;
@@ -335,6 +338,58 @@ form textarea.form-control {
 
 /* Akhir contact */
 
+/* Footer */
+footer {
+    margin-top: -100px;
+    padding-top: 3rem;
+    background-color: #e7eb90;
+}
+
+footer h1 {
+    font-family: 'Viga', sans-serif;
+    color: #333;
+}
+
+footer span {
+    color: #ffc107;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a i.sosmed {
+    display: inline-block;
+    color: #333;
+}
+
+footer a i.sosmed:hover {
+    color: #ffc107;
+}
+
+footer a.company,
+footer a.comunity {
+    padding-bottom: .5rem;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer .sosmed {
+    font-size: 1.7rem;
+    margin-right: .5rem;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer form {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Akhir footer */
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
 
@@ -424,6 +479,7 @@ form textarea.form-control {
     .book label.destination {
         margin-top: 0;
     }
+
     .form-send {
         border-radius: 0.5rem;
     }
