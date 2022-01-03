@@ -137,7 +137,7 @@ nav span {
 }
 
 .parallax-3 .display-4 {
-    margin-top: -70px;
+    margin-top: -40px;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     font-family: 'Montserrat', sans-serif;
@@ -267,6 +267,9 @@ section.services {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
 /* Akhir gallery */
